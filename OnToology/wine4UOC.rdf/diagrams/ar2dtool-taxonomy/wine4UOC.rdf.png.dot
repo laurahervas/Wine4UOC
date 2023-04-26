@@ -1,0 +1,47 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "vin:SemillonOrSauvignonBlanc" "vin:Tempranillo" "vin:AlsatianWine" "vin:Chianti" "vin:WineTaste" "vin:Port" "vin:Meritage" "vin:RedWine" "vin:Riesling" "vin:WineBody" "vin:CabernetFranc" "vin:CheninBlanc" "vin:Rioja_White" "vin:Merlot" "vin:Quality" "vin:Priorat_Red" "vin:PinotNoir" "vin:WineColor" "vin:Sauternes" "vin:Bordeaux" "vin:SauvignonBlanc" "vin:PinotBlanc" "vin:Ribera_Del_Duero_Red" "vin:Wine" "vin:Gamay" "vin:Verdejo" "vin:WineAlcohol" "vin:Rioja_Red" "vin:WineFlavor" "vin:WineSugar" "vin:ItalianWine" "vin:CabernetSauvignon" "vin:LateHarvest" "vin:Zinfandel" "vin:PetiteSyrah" "vin:Country" "vin:DessertWine" "vin:EarlyHarvest" "vin:Albariño" "vin:WineDescriptor" "vin:SparklingWine" "vin:Semillon" "vin:FrenchWine" "vin:SweetRiesling" "vin:Region" "vin:Chardonnay" "vin:WineAcidity" ; /*classes style*/
+	"vin:PinotBlanc" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:LateHarvest" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:SauvignonBlanc" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:AlsatianWine" -> "vin:FrenchWine" [ label = "rdfs:subClassOf" ];
+	"vin:SemillonOrSauvignonBlanc" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Rioja_White" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:CabernetFranc" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:SweetRiesling" -> "vin:DessertWine" [ label = "rdfs:subClassOf" ];
+	"vin:CabernetSauvignon" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Meritage" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Albariño" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Region" -> "vin:Country" [ label = "rdfs:subClassOf" ];
+	"vin:Port" -> "vin:RedWine" [ label = "rdfs:subClassOf" ];
+	"vin:WineAlcohol" -> "vin:WineDescriptor" [ label = "rdfs:subClassOf" ];
+	"vin:WineAcidity" -> "vin:WineTaste" [ label = "rdfs:subClassOf" ];
+	"vin:Chianti" -> "vin:ItalianWine" [ label = "rdfs:subClassOf" ];
+	"vin:Verdejo" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Semillon" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Chardonnay" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:WineSugar" -> "vin:WineTaste" [ label = "rdfs:subClassOf" ];
+	"vin:DessertWine" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:PetiteSyrah" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Zinfandel" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Quality" -> "vin:WineDescriptor" [ label = "rdfs:subClassOf" ];
+	"vin:Merlot" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Rioja_Red" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:WineColor" -> "vin:WineDescriptor" [ label = "rdfs:subClassOf" ];
+	"vin:Priorat_Red" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Ribera_Del_Duero_Red" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:EarlyHarvest" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:WineFlavor" -> "vin:WineTaste" [ label = "rdfs:subClassOf" ];
+	"vin:PinotNoir" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Riesling" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:WineTaste" -> "vin:WineDescriptor" [ label = "rdfs:subClassOf" ];
+	"vin:SparklingWine" -> "vin:WineTaste" [ label = "rdfs:subClassOf" ];
+	"vin:Gamay" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Tempranillo" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:Sauternes" -> "vin:LateHarvest" [ label = "rdfs:subClassOf" ];
+	"vin:Sauternes" -> "vin:Bordeaux" [ label = "rdfs:subClassOf" ];
+	"vin:CheninBlanc" -> "vin:Wine" [ label = "rdfs:subClassOf" ];
+	"vin:WineBody" -> "vin:WineTaste" [ label = "rdfs:subClassOf" ];
+
+}
