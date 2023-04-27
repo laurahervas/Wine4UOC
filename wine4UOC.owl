@@ -4933,6 +4933,21 @@ Xavier Recuenco Betriu</Literal>
         <ObjectProperty IRI="#producesWine"/>
         <Class IRI="#Wine"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isSparkling"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#price"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#rating"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#reviews"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#yearProduction"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#isSparkling"/>
         <Class IRI="#Wine"/>

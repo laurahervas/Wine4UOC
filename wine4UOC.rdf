@@ -256,6 +256,7 @@ Xavier Recuenco Betriu</created_by>
     <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>specifies when a wine is sparkling</rdfs:comment>
@@ -266,6 +267,7 @@ Xavier Recuenco Betriu</created_by>
     <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Specifies the wine price</rdfs:comment>
@@ -276,6 +278,7 @@ Xavier Recuenco Betriu</created_by>
     <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>average of ratings of the wine</rdfs:comment>
@@ -286,6 +289,7 @@ Xavier Recuenco Betriu</created_by>
     <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>number of reviews of the wine</rdfs:comment>
@@ -296,6 +300,7 @@ Xavier Recuenco Betriu</created_by>
     <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
         <rdfs:comment>wine year of production</rdfs:comment>
