@@ -153,30 +153,35 @@
 # 
 # http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies when a wine is sparkling" .
 # 
 # http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the wine price" .
 # 
 # http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating> <http://www.w3.org/2000/01/rdf-schema#comment> "average of ratings of the wine" .
 # 
 # http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "number of reviews of the wine" .
 # 
 # http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
 <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction> <http://www.w3.org/2000/01/rdf-schema#comment> "wine year of production" .
