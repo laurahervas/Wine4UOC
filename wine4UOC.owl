@@ -1245,13 +1245,6 @@ Xavier Recuenco Betriu</Literal>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Region"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasCountry"/>
-            <Class IRI="#Country"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#RoseWine"/>
         <ObjectIntersectionOf>
             <Class IRI="#Wine"/>
@@ -1437,13 +1430,6 @@ Xavier Recuenco Betriu</Literal>
             <NamedIndividual IRI="#OffDry"/>
             <NamedIndividual IRI="#Sweet"/>
         </ObjectOneOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Winery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasRegion"/>
-            <Class IRI="#Region"/>
-        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Albariño"/>
@@ -1703,6 +1689,13 @@ Xavier Recuenco Betriu</Literal>
             <ObjectProperty IRI="#hasFlavor"/>
             <NamedIndividual IRI="#Moderate"/>
         </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRegion"/>
+            <Class IRI="#Region"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DessertWine"/>
@@ -2025,6 +2018,13 @@ Xavier Recuenco Betriu</Literal>
         <Class IRI="#Country"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Region"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCountry"/>
+            <Class IRI="#Country"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Ribera_Del_Duero_Red"/>
         <Class IRI="#Wine"/>
     </SubClassOf>
@@ -2188,13 +2188,6 @@ Xavier Recuenco Betriu</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Wine"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasMaker"/>
-            <Class IRI="#Winery"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wine"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasBody"/>
             <Class IRI="#WineBody"/>
@@ -2269,6 +2262,13 @@ Xavier Recuenco Betriu</Literal>
     <SubClassOf>
         <Class IRI="#WineTaste"/>
         <Class IRI="#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winery"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRegion"/>
+            <Class IRI="#Region"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Zinfandel"/>
