@@ -1,0 +1,372 @@
+{
+  "@context" : {
+    "Albariño" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Albariño"
+    },
+    "LateHarvest" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LateHarvest"
+    },
+    "DryRedWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DryRedWine"
+    },
+    "WineColor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"
+    },
+    "WhiteNonSweetWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteNonSweetWine"
+    },
+    "Muscadet" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Muscadet"
+    },
+    "GermanWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#GermanWine"
+    },
+    "FullBodiedWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FullBodiedWine"
+    },
+    "CabernetSauvignon" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignon"
+    },
+    "RedBurgundy" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#RedBurgundy"
+    },
+    "Winery" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"
+    },
+    "WineTaste" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"
+    },
+    "WhiteLoire" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteLoire"
+    },
+    "Sauternes" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sauternes"
+    },
+    "EarlyHarvest" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#EarlyHarvest"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Country" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country"
+    },
+    "Anjou" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Anjou"
+    },
+    "Sancerre" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sancerre"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "AmericanWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AmericanWine"
+    },
+    "Chianti" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Chianti"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "hasMaker" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker",
+      "@type" : "@id"
+    },
+    "hasWineDescriptor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor",
+      "@type" : "@id"
+    },
+    "DryRiesling" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DryRiesling"
+    },
+    "ProductionYear" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ProductionYear"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "WhiteTableWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteTableWine"
+    },
+    "Vintage" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Vintage"
+    },
+    "hasColor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor",
+      "@type" : "@id"
+    },
+    "PinotBlanc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlanc"
+    },
+    "hasAcidity" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasAcidity",
+      "@type" : "@id"
+    },
+    "reviews" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Rioja_White" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rioja_White"
+    },
+    "Loire" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Loire"
+    },
+    "Burgundy" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Burgundy"
+    },
+    "RedBordeaux" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#RedBordeaux"
+    },
+    "created_by" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#created_by"
+    },
+    "PetiteSyrah" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PetiteSyrah"
+    },
+    "CheninBlanc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CheninBlanc"
+    },
+    "Meursault" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Meursault"
+    },
+    "AlsatianWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AlsatianWine"
+    },
+    "WineSugar" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"
+    },
+    "StEmilion" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#StEmilion"
+    },
+    "adjacentRegion" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion",
+      "@type" : "@id"
+    },
+    "Gamay" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Gamay"
+    },
+    "Quality" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Quality"
+    },
+    "Ribera_Del_Duero_Red" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Ribera_Del_Duero_Red"
+    },
+    "DessertWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DessertWine"
+    },
+    "WineFlavor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"
+    },
+    "TableWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TableWine"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "hasBody" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody",
+      "@type" : "@id"
+    },
+    "Medoc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medoc"
+    },
+    "SemillonOrSauvignonBlanc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SemillonOrSauvignonBlanc"
+    },
+    "hasFlavor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor",
+      "@type" : "@id"
+    },
+    "Port" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Port"
+    },
+    "RedTableWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#RedTableWine"
+    },
+    "Rioja_Red" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rioja_Red"
+    },
+    "SauvignonBlanc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SauvignonBlanc"
+    },
+    "WhiteBordeaux" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteBordeaux"
+    },
+    "WineAlcohol" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineAlcohol"
+    },
+    "TexasWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TexasWine"
+    },
+    "hasQuality" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasQuality",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "PinotNoir" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"
+    },
+    "Riesling" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Riesling"
+    },
+    "FrenchWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FrenchWine"
+    },
+    "WhiteWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteWine"
+    },
+    "title" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#title"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Tempranillo"
+    },
+    "SparklingWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SparklingWine"
+    },
+    "hasVintageYear" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear",
+      "@type" : "@id"
+    },
+    "WineAcidity" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineAcidity"
+    },
+    "hasSugar" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar",
+      "@type" : "@id"
+    },
+    "RoseWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#RoseWine"
+    },
+    "Meritage" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Meritage"
+    },
+    "yearValue" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Zinfandel" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Zinfandel"
+    },
+    "VintageYear" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#VintageYear"
+    },
+    "Priorat_Red" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Priorat_Red"
+    },
+    "locatedIn" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn",
+      "@type" : "@id"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Verdejo"
+    },
+    "Pauillac" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Pauillac"
+    },
+    "WineDescriptor" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"
+    },
+    "isSparkling" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "IceWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#IceWine"
+    },
+    "Tours" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Tours"
+    },
+    "DryWhiteWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DryWhiteWine"
+    },
+    "ItalianWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine"
+    },
+    "Margaux" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Margaux"
+    },
+    "Merlot" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Merlot"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "Beaujolais" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Beaujolais"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "CaliforniaWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CaliforniaWine"
+    },
+    "rating" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "SweetWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SweetWine"
+    },
+    "Bordeaux" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Bordeaux"
+    },
+    "WhiteBurgundy" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhiteBurgundy"
+    },
+    "hasRegion" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasRegion",
+      "@type" : "@id"
+    },
+    "CabernetFranc" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetFranc"
+    },
+    "DryWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DryWine"
+    },
+    "Region" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"
+    },
+    "SweetRiesling" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SweetRiesling"
+    },
+    "yearProduction" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "CotesDOr" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CotesDOr"
+    },
+    "hasCountry" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasCountry",
+      "@type" : "@id"
+    },
+    "Chardonnay" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Chardonnay"
+    },
+    "Semillon" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Semillon"
+    },
+    "WineBody" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"
+    },
+    "producesWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine",
+      "@type" : "@id"
+    },
+    "RedWine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#RedWine"
+    },
+    "Wine" : {
+      "@id" : "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"
+    }
+  }
+}
