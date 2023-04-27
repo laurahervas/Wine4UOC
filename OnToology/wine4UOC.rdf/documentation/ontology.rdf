@@ -279,6 +279,7 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>specifies when a wine is sparkling</rdfs:comment>
@@ -290,6 +291,7 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Specifies the wine price</rdfs:comment>
@@ -301,6 +303,7 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>average of ratings of the wine</rdfs:comment>
@@ -312,6 +315,7 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>number of reviews of the wine</rdfs:comment>
@@ -323,6 +327,7 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
         <rdfs:comment>wine year of production</rdfs:comment>
@@ -794,6 +799,12 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasRegion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Country where the wine is produced</rdfs:comment>
         <rdfs:sameAs>https://dbpedia.org/ontology/Country</rdfs:sameAs>
     </owl:Class>
@@ -1548,14 +1559,14 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasCountry"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country"/>
+        </rdfs:subClassOf>
         <rdfs:comment>region of wine production</rdfs:comment>
     </owl:Class>
     
@@ -2070,12 +2081,6 @@ Xavier Recuenco Betriu</created_by>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
@@ -2262,12 +2267,12 @@ Xavier Recuenco Betriu</created_by>
 
 
     <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasRegion"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment>winery of wine production</rdfs:comment>
         <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/ontology/Winery</rdfs:sameAs>
     </owl:Class>
