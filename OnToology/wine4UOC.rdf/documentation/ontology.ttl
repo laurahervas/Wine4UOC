@@ -170,35 +170,40 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#isSparkling
-:isSparkling rdf:type owl:DatatypeProperty ;
+:isSparkling rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
              rdfs:domain :Wine ;
              rdfs:range xsd:boolean ;
              rdfs:comment "specifies when a wine is sparkling" .
 
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#price
-:price rdf:type owl:DatatypeProperty ;
+:price rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
        rdfs:domain :Wine ;
        rdfs:range xsd:decimal ;
        rdfs:comment "Specifies the wine price" .
 
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#rating
-:rating rdf:type owl:DatatypeProperty ;
+:rating rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
         rdfs:domain :Wine ;
         rdfs:range xsd:decimal ;
         rdfs:comment "average of ratings of the wine" .
 
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#reviews
-:reviews rdf:type owl:DatatypeProperty ;
+:reviews rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
          rdfs:domain :Wine ;
          rdfs:range xsd:int ;
          rdfs:comment "number of reviews of the wine" .
 
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearProduction
-:yearProduction rdf:type owl:DatatypeProperty ;
+:yearProduction rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
                 rdfs:domain :Wine ;
                 rdfs:range xsd:positiveInteger ;
                 rdfs:comment "wine year of production" .
@@ -493,6 +498,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Country
 :Country rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasRegion ;
+                           owl:someValuesFrom :Region
+                         ] ;
          rdfs:comment "Country where the wine is produced" ;
          rdfs:sameAs "https://dbpedia.org/ontology/Country" .
 
@@ -960,12 +969,12 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region
 :Region rdf:type owl:Class ;
-        owl:equivalentClass [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasCountry ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :Country
-                            ] ;
-        rdfs:subClassOf :Country ;
+        rdfs:subClassOf :Country ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCountry ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Country
+                        ] ;
         rdfs:comment "region of wine production" .
 
 
@@ -1283,10 +1292,6 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                         owl:someValuesFrom :Region
                       ] ,
                       [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasMaker ;
-                        owl:allValuesFrom :Winery
-                      ] ,
-                      [ rdf:type owl:Restriction ;
                         owl:onProperty :hasBody ;
                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onClass :WineBody
@@ -1409,10 +1414,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery
 :Winery rdf:type owl:Class ;
-        owl:equivalentClass [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasRegion ;
-                              owl:someValuesFrom :Region
-                            ] ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasRegion ;
+                          owl:someValuesFrom :Region
+                        ] ;
         rdfs:comment "winery of wine production" ;
         rdfs:sameAs "http://dbpedia.org/ontology/Winery"^^xsd:anyURI .
 
